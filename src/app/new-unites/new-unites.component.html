@@ -1,0 +1,37 @@
+<div class="row" >
+  <div class="col-sm-6 col-md-6 col-lg-6" style="background-color:#e3f2fd">
+    
+ 
+    <div class="form-group">
+      <label for="sel1"> رقم ب.ت.و المترشح</label>
+      <select class="form-control" [(ngModel)]="addUnites.idCandidat">
+        <option value="null"> </option>
+        <option *ngFor="let item of candidatData" value={{item}}>{{item}}</option>
+      </select>
+    </div> 
+    <label for="sel1"> إختصاص</label>
+    <select class=form-control [(ngModel)]="addUnites.discipline"> 
+      <option value=un>إختصاص جباية</option>
+      <option value=deux> محاسبة عموميّة</option>
+      <option value=trois>إختصاص جباية</option>
+     </select>
+   
+     <div class="form-group">
+      <label for="usr">القيمة</label>
+      <input type="text" class="form-control" id="usr" [(ngModel)]="addUnites.credit">
+    </div>
+
+
+<form>
+  <div class="form-group">
+    <label for="comment">:الوحدات القيمية المختارة</label>
+    <textarea class="form-control" rows="5" id="comment"></textarea>
+  </div>
+</form>
+
+        <hr>
+        <button class="btn-primary" (click)="saveUnites()">تأكيد</button>
+      
+
+  </div>
+

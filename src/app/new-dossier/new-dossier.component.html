@@ -1,0 +1,101 @@
+<div class="row" >
+  <div class="col-sm-6 col-md-6 col-lg-6" style="background-color:#e3f2fd">
+    
+ 
+ 
+
+      
+    <p>الوثاءق المودعة : </p>
+
+    <div class="">
+
+
+        <div class="col-lg-6">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <input type="checkbox"  [(ngModel)]="addDossier.existanceFormulaire" aria-label="...">
+              </span>
+              <input type="text" class="form-control" aria-label="..." placeholder="الاستمارة">
+            </div>
+           </div>
+
+           <div class="col-lg-6">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <input type="checkbox"  [(ngModel)]="addDossier.existanceADSA" aria-label="...">
+                </span>
+                <input type="text" class="form-control" aria-label="..." placeholder="ADSA وجود ">
+              </div>
+             </div>
+             <div class="col-lg-6">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <input type="checkbox" [(ngModel)]="addDossier.existanceATGC" aria-label="...">
+                  </span>
+                  <input type="text"  class="form-control" aria-label="..." placeholder="ATGC وجود ">
+                </div>
+               </div>
+
+               <div class="col-lg-6">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <input type="checkbox" [(ngModel)]="addDossier.existanceCD" aria-label="...">
+                    </span>
+                    <input type="text"  class="form-control" aria-label="..." placeholder="CD وجود ">
+                  </div>
+                 </div>
+
+                 <div class="col-lg-6">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <input type="checkbox" [(ngModel)]="addDossier.existanceRDEC" aria-label="...">
+                      </span>
+                      <input type="text"  class="form-control" aria-label="..." placeholder="RDEC وجود ">
+                    </div>
+                   </div>
+                   <div class="col-lg-6">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <input type="checkbox"  [(ngModel)]="addDossier.existancePhoto" aria-label="..." >
+                        </span>
+                        <input type="text" class="form-control" aria-label="..."placeholder="صورة حديثة">
+                      </div>
+                     </div>
+
+      <div class="col-lg-6">
+       <div class="input-group">
+         <span class="input-group-addon">
+           <input type="checkbox"  [(ngModel)]="addDossier.existanceCIN" aria-label="...">
+         </span>
+         <input type="text" class="form-control" aria-label="..." placeholder="نسخة ب.ت.و ">
+       </div>
+      </div>
+
+      <div class="">
+
+        
+        <div class="">
+
+          <div class="col-lg-6">
+           <div class="input-group">
+             <span class="input-group-addon">
+               <input type="checkbox" [(ngModel)]="addDossier.existanceEnveloppe" aria-label="...">
+             </span>
+             <input type="text"  class="form-control" aria-label="..." placeholder="وجود الملف">
+           </div>
+          </div>
+          <div class="">
+
+              <div class="form-group">
+                  <label class="control-label">آخر أجل  </label>
+                  <input class="form-control" type="date" [(ngModel)]="addDossier.dateLimite"/>
+                </div>
+
+            
+
+        <hr>
+        <button class="btn-primary" (click)="saveDossier()">التسجيل</button>
+      </div>
+
+  </div>
+

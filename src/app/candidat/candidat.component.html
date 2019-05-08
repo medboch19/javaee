@@ -1,0 +1,28 @@
+<div class="container spacer">
+    <div class="col-sm col-md col-lg">
+       <h4><div class="panel-heading">قائمة المترشحين</div></h4>
+  
+  
+      <table class="table table-striped">
+      <tr>
+        
+        <th>الإسم</th>
+        <th>اللقب </th>
+        <th>الخطة الحالية </th>
+      </tr>
+
+      <tr *ngFor="let c of candidatData">
+          
+        <td>{{c.nom}}</td>
+        <td>{{c.prenom}}</td>
+        <td>{{c.gradeActuel}}</td>
+     
+        
+      </tr>
+    </table>
+    
+
+  </div>
+
+
+</div>
